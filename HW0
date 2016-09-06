@@ -1,0 +1,11 @@
+Project Proposal (Subject to change in the future for resubmission)
+
+Multi-source audio-only music playlist creator and streaming. Name is TBA. The application will allow music videos to stream as 
+audio only to reduce loading time, especially for mobile users. The application's speciality will be the capability to build 
+playlists from various sources (Youtube, Soundcloud, etc.),  users will be able to befriend one another, share and 
+develop playlists. Users can visualize what artists, channels, etc. they or their friends visit most on a graph or plot using D3.
+It would be expected for our team to be using the Youtube and Soundcloud API for this, however we may run into legal issues trying
+do something that is crossplatform as well as the audio-only feature. 
+
+
+
