@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--Gordon Ngo SWE-432 HW1 -->
+<!--This submission was done separately for the sole purpose of refreshing knowledge of HTML/CSS and practice, disregard for actual submission-->
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<!-- Description for your page. Shouldn't be longer then 200 characters -->
+		<meta name="description"
+		content="Static skeleton page for SWE Project done in tutorial format"/>
+
+		<!-- Keywords are used to define your content for search engines. Shouldn't be longer then 1,000 characters -->
+		<meta name="keywords"
+		content="html5 tutorial, gmu swe432, html5"/>
+
+		<!-- Defines how search engines should index your content.
+		index / noindex : indicates if search engines should index the page
+		follow / nofollow : indicates if hyperlinks should be followed and indexed
+		archive / noarchive : indicates whether the page should be archived-->
+		<meta name="robots" content="index,follow"/>
+
+		<!-- References a icon (16 x 16) to associate with your page. Save it in the root directory for IE -->
+		<link rel="icon" href="img/terminal.png"/>
+
+		<!-- Defines the location of a style sheet -->
+		<!-- Style sheets have replaced HTML styling features from the past -->
+		<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+		<script type="javascript" src="js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="stylesheets/bootstrap.css">
+		<link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
+
+		<link rel="stylesheet" href="stylesheets/styles.css"/>
+		  <!-- Firebase -->
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+  <!-- CodeMirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.css"/>
+
+  <!-- Firepad -->
+  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
+  <script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
+	      <script>
+    function init() {
+      // Initialize the Firebase SDK.
+      firebase.initializeApp({
+        apiKey: '<API_KEY>',
+        databaseURL: 'https://<DATABASE_NAME>.firebaseio.com'
+      });
+
+      // Get Firebase Database reference.
+      var firepadRef = firebase.database().ref();
+
+      // Create CodeMirror (with lineWrapping on).
+      var codeMirror = CodeMirror(document.getElementById('firepad'), { lineWrapping: true });
+
+      // Create Firepad (with rich text toolbar and shortcuts enabled).
+      var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror,
+          { richTextShortcuts: true, richTextToolbar: true, defaultText: 'Hello, World!' });
+    }
+  </script>
+		<!-- You must have a title for your page that should be about 16 characters long -->
+		<title>Pip-Editor</title>
+
+	</head>
+
+	<body onload="init()">
+	<div id="firepad"></div>
+		<div class="container-fluid">
+			<div class="row">
+				This is the text-editor - yours truly - siclian motherfucker
+			</div>
+			<div class="row"></div>
+				<div id="firepad-container"></div>
+			</div>
+		</div>
+	</body>
+</html>

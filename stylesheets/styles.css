@@ -1,5 +1,5 @@
 html {
-  background: url('img/bg-term.png') no-repeat center center fixed;
+  background: url('../img/bg-term.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,6 +20,9 @@ a, u {
     color: #14F074;
 }
 
+body {
+  background-color: transparent;
+}
 /*.body {
     background-image: url("img/bg-term.png");
     background-color: #cccccc;
@@ -31,11 +34,11 @@ a, u {
 
 
 input {
-  text-decoration: none;
-  border-color: #14F074;
-  font-family: "Lucida Console", monospace;
-  background-color: #063315;
-  color: #14F074;
+  text-decoration: none !important;
+  border-color: #14F074 !important;
+  font-family: "Lucida Console", monospace !important;
+  background-color: #063315 !important;
+  color: #14F074 !important;
 }
 
 .registration-table{
