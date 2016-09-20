@@ -28,7 +28,13 @@
 
 	<!-- Defines the location of a style sheet -->
 	<!-- Style sheets have replaced HTML styling features from the past -->
-	<link rel="stylesheet" href="styles.css"/>
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+	<script type="javascript" src="js/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
+
+	<link rel="stylesheet" href="stylesheets/styles.css"/>
 
 	<!-- You must have a title for your page that should be about 16 characters long -->
 	<title>Login</title>
@@ -36,28 +42,28 @@
 	</head>
 
 <body>
-	<div class="content">
-		<h1>PipEdit - Login</h1>
-		<br>
-    <br>
-    <form action="index.html">
-      <table class="login-table">
-        <tr>
-          <th><label>Username:</label></th>
-          <th><input type="name"></th>
-        </tr>
-        <tr>
-          <th><label>Password:</label></th>
-          <th><input type="password"></th>
-        </tr>
-       </table>
-       <br>
-          <button class="button" style="vertical-align:middle" type="submit"> <span>Log In</span></button>
-     </form>
+	<div class="container-fluid">
+		<div class="content">
+			<h1>PipEdit - Login</h1>
+			<br>
+	    <br>
+	    <form action="ide.html">
+	      <table class="login-table">
+	        <tr>
+	          <th><label>Username:</label></th>
+	          <th><input type="text"></th>
+	        </tr>
+	        <tr>
+	          <th><label>Password:</label></th>
+	          <th><input type="password"></th>
+	        </tr>
+	       </table>
+	       <br>
+	          <button class="button" style="vertical-align:middle" type="submit"> <span>Log In</span></button>
+	     </form>
 
-   </div>
-
-
+	   </div>
+	</div>
  </body>
 
 
